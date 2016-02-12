@@ -1,0 +1,11 @@
+declare -A LOCATION
+
+# sample command-line from www.easygeotag.info
+
+_LOC_HOME=(-M "set Exif.GPSInfo.GPSLatitude 37/1 46/1 30/1" -M "set Exif.GPSInfo.GPSLatitudeRef N" -M "set Exif.GPSInfo.GPSLongitude 122/1 25/1 10/1" -M "set Exif.GPSInfo.GPSLongitudeRef W")
+
+LOCATION['home']="_LOC_HOME"
+
+# Local variables:
+# mode: sh
+# End:
