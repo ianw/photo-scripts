@@ -10,7 +10,7 @@ from datetime import datetime
 from PIL import Image
 
 def get_date_taken(f):
-    s = Image.open(f)._getexif()[36867][0]
+    s = Image.open(f)._getexif()[36867]
     return datetime.strptime(s, "%Y:%m:%d %H:%M:%S")
 
 def valid_date(s):
