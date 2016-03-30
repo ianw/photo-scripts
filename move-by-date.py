@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# Read the date from the EXIF tags of a bunch of photos, and move
+# those that fall within a given date-range into a separate location.
+
 import argparse
 import glob
 import logging

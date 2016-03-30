@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Use exiv2 to tag photos
+
+# arguments : START STOP <location|exiv2 tags>
+#  tags easily created by easygeotag.info
+#  see geotag-locations.sample for example of how to keep locations
+
 START=$1
 shift
 STOP=$1

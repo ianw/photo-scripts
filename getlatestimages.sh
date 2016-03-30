@@ -1,6 +1,11 @@
 #!/bin/bash
 
+# Get the latest images off a camera's SD card.  If you are reading
+# this; this will not work for you ... it depends on the card, where
+# it is mounted and the way it names files.  But you get the gist.
+
 COPYTO=/home/ianw/media/photos/import
+COPYFROM=/media/ianw/3039-6635/DCIM/
 LATEST_FILE=/home/ianw/media/photos/import/.latest-gf3
 
 name_to_id () {
@@ -19,14 +24,7 @@ fi
 LATEST=`cat $LATEST_FILE`
 echo Latest is $LATEST
 
-#for i in /media/LX3/DCIM/*
-#for i in /media/3230-6530/DCIM/*
-#for i in /media/2418-78BB/DCIM/*
-#for i in /media/1C10-EB6D/DCIM/*
-#for i in /media/BB9A-A71E/DCIM/*
-#for i in /media/usb0/DCIM/*
-#for i in /media/ianw/3538-6138/DCIM/*
-for i in /media/ianw/3039-6635/DCIM/*
+for i in $COPYFROM/*
 do
   cd $i
   for f in $i/*.JPG
